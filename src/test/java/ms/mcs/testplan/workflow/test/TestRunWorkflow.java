@@ -1,4 +1,4 @@
-package com.github.rkanter.minioozieexample;
+package ms.mcs.testplan.workflow.test;
 
 import org.apache.hadoop.fs.Path;
 import org.apache.oozie.client.WorkflowJob;
@@ -13,6 +13,7 @@ public class TestRunWorkflow extends MiniOozieTestCase {
     @Override
     protected void setUp() throws Exception {
         setSystemProperty("oozie.test.user.test", System.getProperty("user.name"));
+        System.setProperty("oozie.test.metastore.server", "false");
         super.setUp();
     }
 

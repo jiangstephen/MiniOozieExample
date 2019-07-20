@@ -16,6 +16,7 @@
   limitations under the License.
 -->
 <workflow-app xmlns="uri:oozie:workflow:0.2" name="map-reduce-wf">
+	
     <start to="mr-node"/>
     <action name="mr-node">
         <map-reduce>
